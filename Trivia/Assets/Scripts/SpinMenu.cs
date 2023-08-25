@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class SpinMenu : MenuBase
 {
@@ -20,6 +21,8 @@ public class SpinMenu : MenuBase
     [Header("Texts")]
     [SerializeField] private TextMeshProUGUI spinText;
     [SerializeField] private TextMeshProUGUI categoryText;
+
+    [Inject] private QuestionManager questionManager;
 
     private List<CategoryType> categories;
 
@@ -65,11 +68,14 @@ public class SpinMenu : MenuBase
 
         categoryText.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
         playButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+
+        questionManager.SetCategoryType(categoryType);
     }
 
     private void OnPlayButtonClicked()
     {
         canvasManager.ChangeCanvas(CanvasType.GameplayMenu);
+        questionManager.LoadNewQuestion();
     }
 
     private void OnBackButtonClicked()

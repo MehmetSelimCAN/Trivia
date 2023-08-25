@@ -9,5 +9,6 @@ public class GameInstaller : MonoInstaller
     {
         Container.Bind<CanvasManager>().AsSingle().WithArguments(canvasManagerMenus);
         Container.Bind<ScoreManager>().AsSingle().NonLazy();
+        Container.BindInterfacesAndSelfTo<QuestionManager>().AsSingle().NonLazy();
     }
 }
