@@ -19,4 +19,7 @@ public static class EventManager
 
     public static Action NewQuestionLoadedEvent;
     public static void NewQuestionLoaded() => NewQuestionLoadedEvent?.Invoke();
+
+    public static Action<AnswerUI> AnswerClickedEvent;
+    public static void AnswerClicked(AnswerUI answer) => AnswerClickedEvent?.Invoke(answer);
 }
