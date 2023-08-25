@@ -25,6 +25,10 @@ public class CanvasManager
                 menus.spinMenu.Show();
                 lastActiveMenu = menus.spinMenu;
                 break;
+            case CanvasType.GameplayMenu:
+                menus.gameplayMenu.Show();
+                lastActiveMenu = menus.gameplayMenu;
+                break;
         }
     }
 
@@ -33,5 +37,6 @@ public class CanvasManager
     {
         public MainMenu mainMenu;
         public SpinMenu spinMenu;
+        public GameplayMenu gameplayMenu;
     }
 }
