@@ -4,7 +4,7 @@ using DG.Tweening;
 
 public class TimerUI : MonoBehaviour
 {
-    private float maxTimer = 5f;
+    private float maxTimer = 10f;
     private float timer;
     [SerializeField] private Image timerFill;
     [SerializeField] private Image timerOutline;
@@ -37,6 +37,7 @@ public class TimerUI : MonoBehaviour
         timerOutline.gameObject.SetActive(false);
         timeOutPopup.transform.DOScale(Vector3.one, 0.25f);
         isGamePlaying = false;
+        EventManager.TimeOut();
     }
 
     public void ResetTimer()
