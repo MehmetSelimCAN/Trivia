@@ -8,5 +8,6 @@ public class GameInstaller : MonoInstaller
     public override void InstallBindings()
     {
         Container.Bind<CanvasManager>().AsSingle().WithArguments(canvasManagerMenus);
+        Container.Bind<ScoreManager>().AsSingle().NonLazy();
     }
 }
