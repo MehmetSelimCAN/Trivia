@@ -1,12 +1,13 @@
 using System;
 using Zenject;
+using UnityEngine;
 
 public class ScoreManager : IInitializable, IDisposable
 {
     private int totalScore = 0;
     public int TotalScore { get { return totalScore; } }
 
-    private int correctAnswerPoint = 5;
+    private int correctAnswerPoint = 10;
     private int wrongAnswerPenalty = 5;
     private int timeoutPenalty = 3;
 
