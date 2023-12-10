@@ -24,6 +24,8 @@ public class SpinMenu : MenuBase
 
     [Inject] private QuestionManager questionManager;
 
+    private Sequence spinSequence;
+
     private List<CategoryType> categories;
 
     private void Awake()
@@ -42,14 +44,14 @@ public class SpinMenu : MenuBase
         spinButton.interactable = false;
         categoryText.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack);
 
-        Sequence sequence = DOTween.Sequence();
-        sequence.Append(spinText.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack));
+        spinSequence = DOTween.Sequence();
+        spinSequence.Append(spinText.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack));
 
         float randomAngle = Random.Range(0, 360);
         CategoryType categoryType = DetectLandedCategory(randomAngle);
         float rotateAngle = (360 * spinAmount) + randomAngle;
 
-        sequence.Append(wheel.DOLocalRotate(new Vector3(0, 0, rotateAngle), spinDuration, RotateMode.FastBeyond360)
+        spinSequence.Append(wheel.DOLocalRotate(new Vector3(0, 0, rotateAngle), spinDuration, RotateMode.FastBeyond360)
             .SetEase(spinEase)
             .OnComplete(() => OnSpinCompleted(categoryType)));
     }
@@ -90,6 +92,8 @@ public class SpinMenu : MenuBase
 
     private void ResetValues()
     {
+        spinSequence.Kill();
+
         categoryText.SetText("Tap on the Spin");
 
         playButton.gameObject.SetActive(false);

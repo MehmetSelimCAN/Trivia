@@ -51,10 +51,12 @@ public class TimerUI : MonoBehaviour
     private void OnEnable()
     {
         isGamePlaying = true;
+        EventManager.NewQuestionLoadedEvent += ResetTimer;
     }
 
     private void OnDisable()
     {
         isGamePlaying = false;
+        EventManager.NewQuestionLoadedEvent -= ResetTimer;
     }
 }
