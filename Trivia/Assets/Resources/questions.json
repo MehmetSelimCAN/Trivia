@@ -2,62 +2,50 @@
     "questions": [
         {
             "category": "general-culture",
-            "question": "Hangisi Türkiye'nin başkenti değildir?",
+            "question": "Türkiye'nin başkenti hangisidir?'",
             "choices": [ "A) İstanbul", "B) Ankara", "C) İzmir", "D) Bursa" ],
-            "answer": "C"
+            "answer": "B"
         },
         {
             "category": "history",
-            "question": "Hangisi Osmanlı Padişahı değildir?",
-            "choices": [ "A) Fatih Sultan Mehmet", "B) Süleyman Kanuni", "C) Abdülhamit II", "D) Kösem Sultan" ],
-            "answer": "D"
+            "question": "Fatih Sultan Mehmet'in babası kimdir?'",
+            "choices": [ "A) II. Murad", "B) Süleyman Kanuni", "C) Abdülhamit II", "D) Kösem Sultan" ],
+            "answer": "A"
         },
         {
             "category": "music",
-            "question": "Hangisi bir müzik grubu değildir?",
-            "choices": [ "A) Pink Floyd", "B) Queen", "C) Metallica", "D) Tarkan" ],
+            "question": "Hangisi Tarkan şarkısı değildir?",
+            "choices": [ "A) Şımarık", "B) Dudu", "C) Beni Çok Sev", "D) Nilüfer" ],
             "answer": "D"
         },
         {
             "category": "cinema",
-            "question": "Hangisi bir film değildir?",
-            "choices": [ "A) Gladiator", "B) Pulp Fiction", "C) Titanic", "D) Benim Adım Kırmızı" ],
-            "answer": "D"
-        },
-        {
-            "category": "general-culture",
-            "question": "Hangisi Türkiye'nin başkenti değildir?",
-            "choices": [ "A) İstanbul", "B) Ankara", "C) İzmir", "D) Bursa" ],
+            "question": "Hangisi Nuri Bilge Ceylan filmi değildir?",
+            "choices": [ "A) Kuru Otlar Üstüne", "B) Ahlat Ağacı", "C) Kader", "D) Kış Uykusu" ],
             "answer": "C"
         },
         {
+            "category": "general-culture",
+            "question": "Aşağıdakilerden hangisi Dünya Sağlık Örgütünün kısaltılmış ismidir?",
+            "choices": [ "A) WHO", "B) UNICEF", "C) NATO", "D) UHW" ],
+            "answer": "A"
+        },
+        {
             "category": "history",
-            "question": "Hangisi Osmanlı Padişahı değildir?",
-            "choices": [ "A) Fatih Sultan Mehmet", "B) Süleyman Kanuni", "C) Abdülhamit II", "D) Kösem Sultan" ],
-            "answer": "D"
+            "question": "Tarihte bilinen en eski Türk Devleti aşağıdakilerden hangisidir?",
+            "choices": [ "A) Asya Hun", "B) Uygur", "C) Göktürk", "D) Hazar" ],
+            "answer": "A"
         },
         {
             "category": "music",
-            "question": "Hangisi bir müzik grubu değildir?",
-            "choices": [ "A) Pink Floyd", "B) Queen", "C) Metallica", "D) Tarkan" ],
-            "answer": "D"
+            "question": "Sertab Erener hangi yıl Eurovisionu kazanmıştır?",
+            "choices": [ "A) 2008", "B) 2003", "C) 2001", "D) 1998" ],
+            "answer": "B"
         },
         {
             "category": "cinema",
-            "question": "Hangisi bir film değildir?",
-            "choices": [ "A) Gladiator", "B) Pulp Fiction", "C) Titanic", "D) Benim Adım Kırmızı" ],
-            "answer": "D"
-        },
-        {
-            "category": "general-culture",
-            "question": "Hangisi Türkiye'nin başkenti değildir?",
-            "choices": [ "A) İstanbul", "B) Ankara", "C) İzmir", "D) Bursa" ],
-            "answer": "C"
-        },
-        {
-            "category": "history",
-            "question": "Hangisi Osmanlı Padişahı değildir?",
-            "choices": [ "A) Fatih Sultan Mehmet", "B) Süleyman Kanuni", "C) Abdülhamit II", "D) Kösem Sultan" ],
+            "question": "Ölümlü Dünya serisinin ilk filmi hangi yıl çıkmıştır?",
+            "choices": [ "A) 2016", "B) 2015", "C) 2014", "D) 2017" ],
             "answer": "D"
         }
     ]
